@@ -312,7 +312,7 @@ $('clearLog').addEventListener('click',()=>{if(confirm('Geçmiş silinsin mi?'))
 updateUI();
 /* ---------- Ayarlar ---------- */
 const SITE='https://nerdeyiz.github.io/';
-const GC_CODE='';      // GoatCounter site kodu (örn. nerdeyiz), boşsa sayaç kapalı
+const GC_CODE='nerdeyiz';      // GoatCounter site kodu (örn. nerdeyiz), boşsa sayaç kapalı
 const FEEDBACK_URL=''; // Geri bildirim formu linki, boşsa bağlantı görünmez
 if(GC_CODE){const g=document.createElement('script');g.async=true;g.src='//gc.zgo.at/count.js';g.dataset.goatcounter='https://'+GC_CODE+'.goatcounter.com/count';document.head.appendChild(g)}
 if(FEEDBACK_URL){$('fbLink').href=FEEDBACK_URL;$('fbRow').hidden=false}
